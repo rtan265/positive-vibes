@@ -16,16 +16,8 @@ async function run() {
 
     const server = hapi.server({
         port: port,
+        routes: { cors: { origin: ["*"] } }
     });
-
-    server.route({
-        config: {
-            cors: {
-                origin: ['*'],
-                additionalHeaders: ['cache-control', 'x-requested-with']
-            }
-        }
-    })
 
     server.route({
         path: "/moodposts",
