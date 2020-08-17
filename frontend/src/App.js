@@ -47,7 +47,7 @@ function App() {
       <p>Name</p>
       <input onChange={(e) => setName(e.target.value)}></input>
       <button onClick={savePost}>Submit</button>
-      {posts.map((post) => {
+      {posts.reverse().map((post) => {
         return (
           <>
             <h1>{post.name}</h1>
