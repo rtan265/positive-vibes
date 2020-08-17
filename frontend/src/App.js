@@ -4,7 +4,6 @@ import './App.css';
 const API_URL = "https://moodbook-backend.herokuapp.com";
 
 function App() {
-  
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
