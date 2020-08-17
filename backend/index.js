@@ -19,6 +19,15 @@ async function run() {
     });
 
     server.route({
+        config: {
+            cors: {
+                origin: ['*'],
+                additionalHeaders: ['cache-control', 'x-requested-with']
+            }
+        }
+    })
+
+    server.route({
         path: "/moodposts",
         method: "GET",
         handler: async () => {
