@@ -47,7 +47,6 @@ function App() {
       <p>Name</p>
       <input onChange={(e) => setName(e.target.value)}></input>
       <button onClick={savePost}>Submit</button>
-      {console.log(posts)}
       {posts.map((post) => {
         return (
           <>
