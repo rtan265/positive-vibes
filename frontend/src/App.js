@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './App.css';
-import Particles from './Particles';
 
 const API_URL = "https://moodbook-backend.herokuapp.com";
 
@@ -49,6 +48,7 @@ function App() {
       <Container>
         <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }}>
+         {/* eslint-disable jsx-a11y/accessible-emoji  */}
           <h1 className = "title">🥳 Positive Vibes Only 🥳</h1>
           <div className = "message-group"> 
             <p>Name</p>
