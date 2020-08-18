@@ -25,7 +25,7 @@ body {
 
 .title{
   font-family: 'Red Rose';
-  font-size: 40px;
+  font-size: 28px;
 }
 
 .message-group{
@@ -36,5 +36,9 @@ body {
 
 .recent-posts{
   font-family: 'Leckerli One';
-  font-size: 35px;
+  font-size: 24px;
 }
+
+/* .post-name{ } */
+
+/* .post-message{} */

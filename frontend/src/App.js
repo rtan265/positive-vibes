@@ -18,7 +18,7 @@ function App() {
   const getPosts = () => {
     fetch(API_URL + "/moodposts")
       .then((response) => response.json())
-      .then((data) => setPosts(data))
+      .then((data) => setPosts(data.reverse()))
   }
 
   const savePost = () => {
@@ -59,11 +59,11 @@ function App() {
           </div>
           <p className = "recent-posts">The 10 most recent posts</p>
           <div className = "posts-group">
-            {posts.reverse().slice(0, 10).map((post) => {
+            {posts.slice(0, 10).map((post) => {
               return (
                 <div>
-                  <h1>{post.name}</h1>
-                  <p>{post.message}</p>
+                  <h1 className = "post-name">{post.name}</h1>
+                  <p className = "post-message">{post.message}</p>
                 </div>
               )})
             }
