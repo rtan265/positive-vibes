@@ -38,6 +38,8 @@ function App() {
           setName('');
           setMessage('');
           getPosts();
+        } else {
+          alert("Stop being so negative!")
         }
       })
   }
