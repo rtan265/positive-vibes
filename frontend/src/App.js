@@ -26,7 +26,7 @@ function App() {
       name: name,
       message: message
     };
-
+    
     fetch(API_URL + "/createpost", {
       method: "POST",
       headers: { "content-type": "application/json"},
@@ -35,8 +35,8 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         if (data.success){
-          setName("");
-          setMessage("");
+          setName('');
+          setMessage('');
           getPosts();
         }
       })
@@ -78,7 +78,6 @@ function App() {
       {/* </Particles> */}
     </>
   );
-  
 }
 
 export default App;
