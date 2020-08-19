@@ -4,10 +4,24 @@ if (process.env.NODE_ENV !== "production") {
 
 const hapi = require("@hapi/hapi");
 const { MongoClient } = require("mongodb");
+const { TextAnalyticsClient, AzureKeyCredential } = require("@azure/ai-text-analytics");
+const textAnalyticsClient = new TextAnalyticsClient(process.env.ENDPOINT,  new AzureKeyCredential(process.env.API_KEY));
 
 const port = process.env.PORT || 3000;
-
 const client = new MongoClient(process.env.MONGODB_CONNECTION);
+
+
+async function getSentimentScore(message){
+    
+    const sentimentInput = [message];
+    const sentimentResult = await textAnalyticsClient.analyzeSentiment(sentimentInput);
+
+    if (sentimentResult[0].sentiment == "positive"){
+        return true;
+    } 
+    
+    return false;
+}
 
 async function run() {
     await client.connect();
@@ -39,15 +53,21 @@ async function run() {
                 return { success: false }
             }
 
-            const post = {
-                name: name,
-                message: message,
-                timestamp: new Date().getTime()
+            const isPositive = await getSentimentScore(message);
+            
+            if (isPositive){
+                const post = {
+                    name: name,
+                    message: message,
+                    timestamp: new Date().getTime()
+                }
+    
+                await moodCollection.insertOne(post);
+    
+                return { success: true }
             }
-
-            await moodCollection.insertOne(post);
-
-            return { success: true }
+            
+            return { success: false }
         }
     });
 
