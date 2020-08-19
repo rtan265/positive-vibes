@@ -1,4 +1,4 @@
-# [Positive Vibes Only - Backend]()
+# [Positive Vibes Only - Backend](https://moodbook-backend.herokuapp.com/)
 
 ## Installation:
 To run this code on your local machine, first clone the repository. NOTE: This is a subdirectory, so when you clone, you're actually cloning the main folder that consists of the backend and frontend files.  

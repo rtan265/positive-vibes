@@ -24,25 +24,72 @@ body {
 }
 
 .title{
-  font-family: 'Red Rose';
-  font-size: 28px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5em;
+  text-align: center;
+  margin: 1em auto 1em auto;
 }
 
 .message-group{
-  border-color: black;
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  border-radius: 1em;
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em;
   width: auto;
+  height: 25em;
+  max-height: 25em;
 }
 
-.recent-posts{
-  font-family: 'Leckerli One';
-  font-size: 24px;
+.posts-group{
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  border-radius: 1em;
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em;
+  height: 22.5em;
+  max-height: 22.5em;
+  overflow-y: scroll;
+}
+
+.input-name {
+  width: 28em;
+  margin-bottom: 2em;
 }
 
 .text-area-message{
-  resize: horizontal;
+  width: 28em;
+  height: 10em;
+  resize: both;
 }
 
-/* .post-name{ } */
+.messages-container h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+}
 
-/* .post-message{} */
+.post-message {
+  font-size: 1.5em;
+  margin-bottom: 0em;
+}
+
+.post-name { 
+  font-size: 1em;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  .title{
+    font-size: 2.5em;
+  }
+  .input-name {
+    width: 17.5em;
+    margin-bottom: 2em;
+  }
+  .text-area-message{
+    width: 17.5em;
+    height: 10em;
+  }
+}
+

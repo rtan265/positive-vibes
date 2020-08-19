@@ -47,27 +47,31 @@ function App() {
     {/* <Particles> */}
       <Container>
         <Row>
-        <Col sm="12" md={{ size: 6, offset: 3 }}>
-         {/* eslint-disable jsx-a11y/accessible-emoji  */}
+          {/* eslint-disable jsx-a11y/accessible-emoji  */}
           <h1 className = "title">🥳 Positive Vibes Only 🥳</h1>
-          <div className = "message-group"> 
-            <p>Name</p>
-            <input onChange={(e) => setName(e.target.value)}></input>
-            <p>Messages</p>
-            <textarea className = "text-area-message" onChange={(e) => setMessage(e.target.value)}></textarea>
-            <p><button className = "button-input" onClick={savePost}>Submit</button></p>
-          </div>
-          <p className = "recent-posts">The 10 most recent posts</p>
-          <div className = "posts-group">
-            {posts.slice(0, 10).map((post) => {
-              return (
-                <div>
-                  <h1 className = "post-name">{post.name}</h1>
-                  <p className = "post-message">{post.message}</p>
-                </div>
-              )})
-            }
-          </div>
+        </Row>
+        <Row>
+          <Col sm="12" md="6">
+            <div className = "message-group"> 
+              <p>Name</p>
+              <input className = "input-name" onChange={(e) => setName(e.target.value)}></input>
+              <p>Messages</p>
+              <textarea className = "text-area-message" onChange={(e) => setMessage(e.target.value)}></textarea>
+              <p><button className = "button-input" onClick={savePost}>Submit</button></p>
+            </div>
+          </Col>
+          <Col sm="12" md="6" className="messages-container">
+            <h1>Most recent posts</h1>
+            <div className = "posts-group">
+              {posts.slice(0, 10).map((post) => {
+                return (
+                  <div>
+                    <p className = "post-message">{post.message}</p>
+                    <p className = "post-name">- {post.name}</p>
+                  </div>
+                )})
+              }
+            </div>
           </Col>
         </Row>
       </Container>
