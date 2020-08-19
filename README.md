@@ -1,4 +1,4 @@
-# Positive-Vibes-Only
+# [Positive-Vibes-Only](https://positive-vibes-auckland.netlify.app/)
 This is an application that has a functional backend and database.
 The frontend is deployed on [Netlify](https://positive-vibes-auckland.netlify.app/) and the backend is deployed on [Heroku](https://moodbook-backend.herokuapp.com/). The database is hosted on [MongoDb Atlas](https://www.mongodb.com/cloud/atlas).
 
