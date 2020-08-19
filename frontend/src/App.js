@@ -76,7 +76,7 @@ function App() {
             </div>
           </Col>
         </Row>
-        <p className = "github-link">The source code for this web app is here: <a href="https://github.com/rtan265/moodbook"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a></p>
+        <p className = "github-link">The source code for this web app is here: <a href="https://github.com/rtan265/positive-vibes"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a></p>
       </Container>
 
       
