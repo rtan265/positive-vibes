@@ -10,3 +10,6 @@ This is still a work in progress. As of (20/08/2020), I have the basic MVP done,
 
 ## Installation
 Installation guides for each folder is in their respective README's. 
+
+## Photo of the website:
+![Positive Vibes](./readmeImages/positive-vibes.png)
