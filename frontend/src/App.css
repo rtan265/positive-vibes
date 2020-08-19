@@ -39,6 +39,10 @@ body {
   font-size: 24px;
 }
 
+.text-area-message{
+  resize: horizontal;
+}
+
 /* .post-name{ } */
 
 /* .post-message{} */

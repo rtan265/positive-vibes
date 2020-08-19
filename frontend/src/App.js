@@ -54,8 +54,8 @@ function App() {
             <p>Name</p>
             <input onChange={(e) => setName(e.target.value)}></input>
             <p>Messages</p>
-            <textarea onChange={(e) => setMessage(e.target.value)}></textarea>
-            <button className = "button-input" onClick={savePost}>Submit</button>
+            <textarea className = "text-area-message" onChange={(e) => setMessage(e.target.value)}></textarea>
+            <p><button className = "button-input" onClick={savePost}>Submit</button></p>
           </div>
           <p className = "recent-posts">The 10 most recent posts</p>
           <div className = "posts-group">
