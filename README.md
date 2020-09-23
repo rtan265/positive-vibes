@@ -1,6 +1,6 @@
 # [Positive-Vibes-Only](https://positive-vibes-auckland.netlify.app/)
 This is an application that has a functional backend and database.
-The frontend is deployed on [Netlify](https://positive-vibes-auckland.netlify.app/) and the backend is deployed on [Heroku](https://moodbook-backend.herokuapp.com/). The database is hosted on [MongoDb Atlas](https://www.mongodb.com/cloud/atlas).
+The frontend is deployed on [Netlify](https://www.netlify.com/) and the backend is deployed on [Heroku](https://moodbook-backend.herokuapp.com/). The database is hosted on [MongoDb Atlas](https://www.mongodb.com/cloud/atlas).
 
 ## Motivation
 At the conclusion of Create Camp 2020, I wanted to further develop my full stack development skills. So I decided to build a project based on a bootcamp that Summer of Tech hosted! I wanted to learn how to deploy to different websites, as well as deploying a working frontend and backend, as well as a database. 
